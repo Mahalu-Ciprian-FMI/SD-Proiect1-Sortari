@@ -35,7 +35,7 @@ int main()
 	f >> n;
 	for (int i = 0; i < n; i++)
 		f >> v[i];
-	insertionsort(v, n);
+	quicksort(0,n-1,v);
 	for (int i = 0; i < n; i++)
 		g << v[i] << " ";
 	return 0;
